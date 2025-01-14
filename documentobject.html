@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengakses dan memanipulasi</title>
+</head>
+<body>
+    <h1>Hello RPL</h1>
+    <p class="description">Ini adalah contoh kode program dari document objek</p>
+    <button id="changeContent">Ubah Context</button>
+     <script>
+        f
+        //mengakses elemen menggunakan document object
+        const header = document.getElementById("header");
+        const paragraph = document.querySelector(".description");
+        const button = document.getElementById("chamgeContent");
+
+        //memanipulasi konten elemen
+        button.addEventListener("click", ()=> {
+            header.textContent = "Hello, Document Object";
+            paragraph.textContent = "Content telah di ubah oleh document object";
+        });
+     </script>
+</body>
+</html>

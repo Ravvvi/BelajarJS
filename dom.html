@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM EXAMPLE</title>
+</head>
+<body>
+    <h1 id="title">JavaScript</h1>
+    <button id="changetext">Changetext</button>
+    <script>
+        //mengakses elemen dom
+        const titleElement = document.getElementById("title");
+        const button = document.getElementById("changetext")
+
+        button.addEventListener("click",() =>{
+            titleElement.textContent = "Hello DOM";
+        }
+    );
+    </script>
+</body>
+</html>
