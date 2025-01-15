@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to turn back the time cause i don't wanna lose you</title>
+</head>
+<body>
+    <div id="container">
+        <p>Paragraph pertama</p>
+    </div>
+    <button id="addNode">Add node</button>
+    <button id="removeNode">Remove node</button>
+    
+    <script>
+        //add new node
+        const container = document.getElementById("container");
+        const addNodeButton = document.getElementById("addNode");
+        const removeNodeButton = document.getElementById("removeNode");
+
+        addNodeButton.addEventListener("click", ()=> {
+            const newParagraph = document.createElement("p");
+            newParagraph.textContent = "paragraf baru"
+            container.appendChild(newParagraph);
+        });
+        //delete last node
+        removeNodeButton.addEventListener("click", ()=> {
+            if(container.lastChild) {
+                container.removeChild(container.lastChild);
+            }
+        });
+    </script>
+</body>
+</html>
